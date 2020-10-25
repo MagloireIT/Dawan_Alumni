@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 23 oct. 2020 à 14:18
+-- Généré le : Dim 25 oct. 2020 à 16:32
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -96,11 +96,19 @@ CREATE TABLE IF NOT EXISTS `user` (
   `prenom` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
-  `role` varchar(255) NOT NULL,
+  `role` varchar(255) DEFAULT NULL,
   `photo` varchar(255) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `nom`, `prenom`, `email`, `mdp`, `role`, `photo`, `user_id`) VALUES
+(1, 'aaaa', 'aaaa', 'aaz@gmail.com', 'azazaaa', NULL, NULL, NULL),
+(2, 'loic', 'loic', 'loic@gmail.com', 'loic', NULL, NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
