@@ -57,7 +57,7 @@ function toggleText(btnclick1)  {
 
 
 
-<for m>
+<form method="post" action="controller/signController.php">
 <fieldset>
 <legend>Inscription</legend>
 <div class="form-group">
@@ -79,7 +79,7 @@ function toggleText(btnclick1)  {
 <div class="form-group">
   <label class="col-md-2 control-label" for="email">Email</label>
   <div class="col-md-10">
-<input type="email" id="email" class="form-control input-md"required>  
+<input type="email" id="email" name="email" class="form-control input-md"required>  
   </div>
 </div>
 
@@ -98,7 +98,7 @@ function toggleText(btnclick1)  {
 <div class="form-group">
   <label class="col-md-5 control-label" for="confirmmdp">Confirmer le mot de passe</label>
   <div class="col-md-10">
-    <input id="confirmmdp" name="confirmmdp" type="password" placeholder="" class="form-control input-md" required>
+    <input id="confirmmdp" name="confirmmdp" type="password" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -125,9 +125,9 @@ function toggleText(btnclick1)  {
 <fieldset>
 <legend>Connexion</legend>
 <div class="form-group">
-  <label class="col-md-2 control-label" for="email">Email</label>
+  <label class="col-md-2 control-label" for="emailco">Email</label>
   <div class="col-md-10">
-<input type="email" id="email" class="form-control input-md">  
+<input type="email" id="emailco" name="emailco"class="form-control input-md">  
   </div>
 </div>
 
@@ -136,9 +136,9 @@ function toggleText(btnclick1)  {
 
 
 <div class="form-group">
-  <label class="col-md-3 control-label" for="mdp">Mot de passe</label>
+  <label class="col-md-3 control-label" for="mdpco">Mot de passe</label>
   <div class="col-md-10">
-    <input id="mdp" name="mdp" type="password" placeholder="" class="form-control input-md" >
+    <input id="mdpco" name="mdpco" type="password" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
