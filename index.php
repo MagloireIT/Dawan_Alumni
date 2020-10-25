@@ -119,9 +119,8 @@ function toggleText(btnclick1)  {
 
 
 
-   <!-- form co -->
    <div class="col-md-6 border-left" id="formco1">
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="controller/loginController.php">
 <fieldset>
 <legend>Connexion</legend>
 <div class="form-group">
